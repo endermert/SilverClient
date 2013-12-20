@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="/Imports">
+      <xsd:import schemaLocation="http://88.247.221.186:9080/CihazlarServis.svc?xsd=xsd0" />
+      <xsd:import schemaLocation="http://88.247.221.186:9080/CihazlarServis.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://88.247.221.186:9080/CihazlarServis.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/MySisEvo.Web.Classes" />
+      <xsd:import schemaLocation="http://88.247.221.186:9080/CihazlarServis.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="CihazlarServis_getCihazlar_InputMessage">
+    <wsdl:part name="parameters" element="getCihazlar" />
+  </wsdl:message>
+  <wsdl:message name="CihazlarServis_getCihazlar_OutputMessage">
+    <wsdl:part name="parameters" element="getCihazlarResponse" />
+  </wsdl:message>
+  <wsdl:message name="CihazlarServis_getAraclar_InputMessage">
+    <wsdl:part name="parameters" element="getAraclar" />
+  </wsdl:message>
+  <wsdl:message name="CihazlarServis_getAraclar_OutputMessage">
+    <wsdl:part name="parameters" element="getAraclarResponse" />
+  </wsdl:message>
+  <wsdl:message name="CihazlarServis_getKullanici_InputMessage">
+    <wsdl:part name="parameters" element="getKullanici" />
+  </wsdl:message>
+  <wsdl:message name="CihazlarServis_getKullanici_OutputMessage">
+    <wsdl:part name="parameters" element="getKullaniciResponse" />
+  </wsdl:message>
+  <wsdl:message name="CihazlarServis_DegerAyikla_InputMessage">
+    <wsdl:part name="parameters" element="DegerAyikla" />
+  </wsdl:message>
+  <wsdl:message name="CihazlarServis_DegerAyikla_OutputMessage">
+    <wsdl:part name="parameters" element="DegerAyiklaResponse" />
+  </wsdl:message>
+  <wsdl:message name="CihazlarServis_getAniDegerler_InputMessage">
+    <wsdl:part name="parameters" element="getAniDegerler" />
+  </wsdl:message>
+  <wsdl:message name="CihazlarServis_getAniDegerler_OutputMessage">
+    <wsdl:part name="parameters" element="getAniDegerlerResponse" />
+  </wsdl:message>
+  <wsdl:message name="CihazlarServis_getSayacDegerler_InputMessage">
+    <wsdl:part name="parameters" element="getSayacDegerler" />
+  </wsdl:message>
+  <wsdl:message name="CihazlarServis_getSayacDegerler_OutputMessage">
+    <wsdl:part name="parameters" element="getSayacDegerlerResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CihazlarServis">
+    <wsdl:operation name="getCihazlar">
+      <wsdl:input wsaw:Action="urn:CihazlarServis/getCihazlar" message="CihazlarServis_getCihazlar_InputMessage" />
+      <wsdl:output wsaw:Action="urn:CihazlarServis/getCihazlarResponse" message="CihazlarServis_getCihazlar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAraclar">
+      <wsdl:input wsaw:Action="urn:CihazlarServis/getAraclar" message="CihazlarServis_getAraclar_InputMessage" />
+      <wsdl:output wsaw:Action="urn:CihazlarServis/getAraclarResponse" message="CihazlarServis_getAraclar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getKullanici">
+      <wsdl:input wsaw:Action="urn:CihazlarServis/getKullanici" message="CihazlarServis_getKullanici_InputMessage" />
+      <wsdl:output wsaw:Action="urn:CihazlarServis/getKullaniciResponse" message="CihazlarServis_getKullanici_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DegerAyikla">
+      <wsdl:input wsaw:Action="urn:CihazlarServis/DegerAyikla" message="CihazlarServis_DegerAyikla_InputMessage" />
+      <wsdl:output wsaw:Action="urn:CihazlarServis/DegerAyiklaResponse" message="CihazlarServis_DegerAyikla_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAniDegerler">
+      <wsdl:input wsaw:Action="urn:CihazlarServis/getAniDegerler" message="CihazlarServis_getAniDegerler_InputMessage" />
+      <wsdl:output wsaw:Action="urn:CihazlarServis/getAniDegerlerResponse" message="CihazlarServis_getAniDegerler_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSayacDegerler">
+      <wsdl:input wsaw:Action="urn:CihazlarServis/getSayacDegerler" message="CihazlarServis_getSayacDegerler_InputMessage" />
+      <wsdl:output wsaw:Action="urn:CihazlarServis/getSayacDegerlerResponse" message="CihazlarServis_getSayacDegerler_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

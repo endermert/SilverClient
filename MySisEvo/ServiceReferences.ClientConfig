@@ -1,0 +1,54 @@
+<configuration>
+    <system.serviceModel>
+        <bindings>
+            <customBinding>
+                <binding name="CustomBinding_CihazlarServis1">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647" />
+                </binding>
+                <binding name="CustomBinding_AracServis">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647" />
+                </binding>
+                <binding name="CustomBinding_CihazlarServis">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647" />
+                </binding>
+                <binding name="CustomBinding_SessionServis">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647" />
+                </binding>
+                <binding name="CustomBinding_DataServis">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647" />
+                </binding>
+                <binding name="CustomBinding_KullaniciServis">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647" />
+                </binding>
+            </customBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://uzoksis.azurewebsites.net/CihazlarServis.svc"
+                binding="customBinding" bindingConfiguration="CustomBinding_CihazlarServis1"
+                contract="CHZ_RS.CihazlarServis" name="CustomBinding_CihazlarServis1" />
+            <endpoint address="http://uzoksis.azurewebsites.net/AracServis.svc" binding="customBinding"
+                bindingConfiguration="CustomBinding_AracServis" contract="ServiceReference.MySisEvo.Web.AracServis.AracServis"
+                name="CustomBinding_AracServis" />
+            <endpoint address="http://uzoksis.azurewebsites.net/CihazlarServis.svc"
+                binding="customBinding" bindingConfiguration="CustomBinding_CihazlarServis"
+                contract="ServiceReference.MySisEvo.Web.CihazlarServis.CihazlarServis"
+                name="CustomBinding_CihazlarServis" />
+            <endpoint address="http://uzoksis.azurewebsites.net/SessionServis.svc" binding="customBinding"
+                bindingConfiguration="CustomBinding_SessionServis" contract="ServiceReference.MySisEvo.Web.SessionServis.SessionServis"
+                name="CustomBinding_SessionServis" />
+            <endpoint address="http://uzoksis.azurewebsites.net/DataServis.svc" binding="customBinding"
+                bindingConfiguration="CustomBinding_DataServis" contract="ServiceReference.MySisEvo.Web.DataServis.DataServis"
+                name="CustomBinding_DataServis" />
+            <endpoint address="http://uzoksis.azurewebsites.net/KullaniciServis.svc"
+                binding="customBinding" bindingConfiguration="CustomBinding_KullaniciServis"
+                contract="ServiceReference.MySisEvo.Web.KullaniciServis.KullaniciServis"
+                name="CustomBinding_KullaniciServis" />
+        </client>
+    </system.serviceModel>
+</configuration>

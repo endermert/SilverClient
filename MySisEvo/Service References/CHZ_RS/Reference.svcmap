@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2ccc4880-cd78-4834-99c5-ca78fe289946" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://88.247.221.186:9080/CihazlarServis.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CihazlarServis4.xsd" MetadataType="Schema" ID="3a768823-7896-49df-9f51-290b639567d2" SourceId="1" SourceUrl="http://88.247.221.186:9080/CihazlarServis.svc?xsd=xsd2" />
+    <MetadataFile FileName="CihazlarServis41.xsd" MetadataType="Schema" ID="14f9a14f-1ddd-44cb-9b3d-dd809ffee73f" SourceId="1" SourceUrl="http://88.247.221.186:9080/CihazlarServis.svc?xsd=xsd3" />
+    <MetadataFile FileName="CihazlarServis.wsdl" MetadataType="Wsdl" ID="c4594be7-34c4-4924-9075-8d204996b241" SourceId="1" SourceUrl="http://88.247.221.186:9080/CihazlarServis.svc?wsdl" />
+    <MetadataFile FileName="CihazlarServis.disco" MetadataType="Disco" ID="03b3a2fa-bec7-4dc8-a5aa-a3f5086650de" SourceId="1" SourceUrl="http://88.247.221.186:9080/CihazlarServis.svc?disco" />
+    <MetadataFile FileName="CihazlarServis1.wsdl" MetadataType="Wsdl" ID="ab2b6ff2-7809-44ad-9ece-3659d615ee02" SourceId="1" SourceUrl="http://88.247.221.186:9080/CihazlarServis.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="CihazlarServis42.xsd" MetadataType="Schema" ID="b8059d77-36a5-49fb-8f90-3a1672db4448" SourceId="1" SourceUrl="http://88.247.221.186:9080/CihazlarServis.svc?xsd=xsd0" />
+    <MetadataFile FileName="CihazlarServis43.xsd" MetadataType="Schema" ID="89addf38-a5ad-4098-b31f-a0b477611027" SourceId="1" SourceUrl="http://88.247.221.186:9080/CihazlarServis.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

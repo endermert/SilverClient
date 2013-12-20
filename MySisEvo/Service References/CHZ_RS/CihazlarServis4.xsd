@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/MySisEvo.Web.Classes" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MySisEvo.Web.Classes" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfCihazlar">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Cihazlar" nillable="true" type="tns:Cihazlar" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCihazlar" nillable="true" type="tns:ArrayOfCihazlar" />
+  <xs:complexType name="Cihazlar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CHZ_2002MODEL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_ABONEADI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_ABONENO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_ACIKLAMA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_ADRES" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_ADSLHIZNO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_ADSLKULLANICI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_ADSLSIFRE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_AKIMTRAFOCARPAN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_AKIMTRAFOSU" type="xs:int" />
+      <xs:element minOccurs="0" name="CHZ_BIT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_BOYLAM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_CARPAN" type="xs:int" />
+      <xs:element minOccurs="0" name="CHZ_CEZAORANIND" type="xs:int" />
+      <xs:element minOccurs="0" name="CHZ_CEZAORANKAP" type="xs:int" />
+      <xs:element minOccurs="0" name="CHZ_CIHAZAD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_CIHAZAGNO" type="xs:int" />
+      <xs:element minOccurs="0" name="CHZ_COKLUOKU" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_COMPORT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_CRCHESAPLA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_DEVREYEALMATARIHI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_DOSYANO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_EMAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_ENLEM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_EOKUMA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_FATURATARIHI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_FAX" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_FIRMA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_GERILIMTRAFOCARPAN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_GRUP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_GSMSEBEKE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_HABERLESMEKITI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_HABERLESMETURU" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_HAT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_HATNO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_HIZLIOKUMA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="CHZ_IL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_ILCE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_IMEI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_ISLETMEKODU" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_KOTATARIFE" type="xs:int" />
+      <xs:element minOccurs="0" name="CHZ_LOGO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_MASTERCIHAZ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_MASTERSERINO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_MODEL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_OKUMAGOREVLER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_OKUMASEKLI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_PASSWORD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_PORT" type="xs:int" />
+      <xs:element minOccurs="0" name="CHZ_REAKTIFHESAP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_REAKTIFRAPOR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_RESIM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_ROLEMARKA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_SAATFORMAT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_SAYACMARKA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_SAYACTURU" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_SERINO" type="xs:int" />
+      <xs:element minOccurs="0" name="CHZ_SIRA" type="xs:int" />
+      <xs:element minOccurs="0" name="CHZ_SIRANO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_SIRKET" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_SMSGONDER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_SMSGUN" type="xs:int" />
+      <xs:element minOccurs="0" name="CHZ_SMSINDORAN" type="xs:int" />
+      <xs:element minOccurs="0" name="CHZ_SMSKAPORAN" type="xs:int" />
+      <xs:element minOccurs="0" name="CHZ_SOZLESMEGUCU" type="xs:float" />
+      <xs:element minOccurs="0" name="CHZ_SYCILKBD" type="xs:int" />
+      <xs:element minOccurs="0" name="CHZ_TANIM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_TARIFE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_TARIHFORMAT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_TEL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_TELNO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_TIP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_URETIMYILI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_WEBERISIM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_WEBSIFRE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_YUKPROFILOKU" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Cihazlar" nillable="true" type="tns:Cihazlar" />
+  <xs:complexType name="ArrayOfAraclar">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Araclar" nillable="true" type="tns:Araclar" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAraclar" nillable="true" type="tns:ArrayOfAraclar" />
+  <xs:complexType name="Araclar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ARC_CINS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ARC_ICON" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ARC_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="ARC_KONTAK" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ARC_MARKA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ARC_MODEL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ARC_PLAKA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ARC_RENK" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ARC_RES1M" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ARC_SAHIBI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ARC_SASINO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ARC_SERINO" type="xs:int" />
+      <xs:element minOccurs="0" name="ARC_TEL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHZ_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="FRM_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="GRP_ID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Araclar" nillable="true" type="tns:Araclar" />
+  <xs:complexType name="Kullanici">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Deneme" type="xs:int" />
+      <xs:element minOccurs="0" name="FRM_1D" type="xs:int" />
+      <xs:element minOccurs="0" name="KUL_AD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KUL_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="KUL_SIFRE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Kullanici" nillable="true" type="tns:Kullanici" />
+  <xs:complexType name="Role">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="A_L1MissP" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L1OComp" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L1OCurrent" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L1OHDC" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L1OHDV" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L1OTHDC" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L1OTHDV" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L1OVolt" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L1UComp" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L1UVolt" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L2MissP" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L2OComp" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L2OCurrent" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L2OHDC" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L2OHDV" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L2OTHDC" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L2OTHDV" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L2OVolt" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L2UComp" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L2UVolt" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L3MissP" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L3OComp" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L3OCurrent" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L3OHDC" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L3OHDV" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L3OTHDC" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L3OTHDV" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L3OVolt" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L3UComp" type="xs:boolean" />
+      <xs:element minOccurs="0" name="A_L3UVolt" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Cos1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cos2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cos3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CosE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CosFi" type="xs:int" />
+      <xs:element minOccurs="0" name="F_A1var" type="xs:boolean" />
+      <xs:element minOccurs="0" name="F_A2var" type="xs:boolean" />
+      <xs:element minOccurs="0" name="F_A3var" type="xs:boolean" />
+      <xs:element minOccurs="0" name="F_F12kisa" type="xs:boolean" />
+      <xs:element minOccurs="0" name="F_F13kisa" type="xs:boolean" />
+      <xs:element minOccurs="0" name="F_F1var" type="xs:boolean" />
+      <xs:element minOccurs="0" name="F_F23kisa" type="xs:boolean" />
+      <xs:element minOccurs="0" name="F_F2var" type="xs:boolean" />
+      <xs:element minOccurs="0" name="F_F3var" type="xs:boolean" />
+      <xs:element minOccurs="0" name="F_KayipF" type="xs:boolean" />
+      <xs:element minOccurs="0" name="F_NyeF" type="xs:boolean" />
+      <xs:element minOccurs="0" name="F_SiraF" type="xs:boolean" />
+      <xs:element minOccurs="0" name="GA_FazConErr" type="xs:boolean" />
+      <xs:element minOccurs="0" name="GA_KdmChgErr" type="xs:boolean" />
+      <xs:element minOccurs="0" name="GA_KdmSfrErr" type="xs:boolean" />
+      <xs:element minOccurs="0" name="GA_MissL1Err" type="xs:boolean" />
+      <xs:element minOccurs="0" name="GA_MissL2Err" type="xs:boolean" />
+      <xs:element minOccurs="0" name="GA_MissL3Err" type="xs:boolean" />
+      <xs:element minOccurs="0" name="GA_OCompErr" type="xs:boolean" />
+      <xs:element minOccurs="0" name="GA_OHeatErr" type="xs:boolean" />
+      <xs:element minOccurs="0" name="GA_SysErr" type="xs:boolean" />
+      <xs:element minOccurs="0" name="GA_UCompErr" type="xs:boolean" />
+      <xs:element minOccurs="0" name="GA_YetkiErr" type="xs:boolean" />
+      <xs:element minOccurs="0" name="K_akimYok" type="xs:boolean" />
+      <xs:element minOccurs="0" name="K_dVolt" type="xs:boolean" />
+      <xs:element minOccurs="0" name="K_fabrika" type="xs:boolean" />
+      <xs:element minOccurs="0" name="K_sicaklik" type="xs:boolean" />
+      <xs:element minOccurs="0" name="K_vBagHata" type="xs:boolean" />
+      <xs:element minOccurs="0" name="K_vHarm" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Kademeler" nillable="true" type="tns:ArrayOfKademe" />
+      <xs:element minOccurs="0" name="VMeter" type="xs:int" />
+      <xs:element minOccurs="0" name="akimtrafosu" type="xs:int" />
+      <xs:element minOccurs="0" name="akm1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="akm2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="akm3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="er" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="erc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="erl" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="frekans" type="xs:double" />
+      <xs:element minOccurs="0" name="i_ELReaktifYon" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="i_L1DogruYon" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="i_L1Ogr" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="i_L1ReaktifYon" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="i_L2DogruYon" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="i_L2Ogr" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="i_L2ReaktifYon" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="i_L3DogruYon" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="i_L3Ogr" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="i_L3ReaktifYon" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="i_hiz" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="i_jenarator" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="i_kademeKoru" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="i_mod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="i_ogrmod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="i_tanfi" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="inboluak_r" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="inboluak_s" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="inboluak_t" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="inboluak_top" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kVA1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kVA2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kVA3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kapboluak_r" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kapboluak_s" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kapboluak_t" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kapboluak_top" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kr1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kr2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kr3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kw1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kw2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="kw3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="offsure_r" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="offsure_s" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="offsure_t" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="offsure_top" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="onnsure_r" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="onnsure_s" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="onnsure_t" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="onnsure_top" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sicaklik" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="topAktif" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="topGorunen" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="v1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="v2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="v3" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Role" nillable="true" type="tns:Role" />
+  <xs:complexType name="ArrayOfKademe">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Kademe" nillable="true" type="tns:Kademe" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKademe" nillable="true" type="tns:ArrayOfKademe" />
+  <xs:complexType name="Kademe">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Devrede" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Faz1Ind" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Faz1Kon" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Faz2Ind" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Faz2Kon" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Faz3Ind" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Faz3Kon" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Ogrenildi" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ZamanDolmus" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Kademe" nillable="true" type="tns:Kademe" />
+  <xs:complexType name="Sayac">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="syc_Auyarisay" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_Vuyarisay" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_demand" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_demand0say" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_enyukolc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_fazkessay1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_fazkessay2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_fazkessay3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_fazkessaytop" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_govactar" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_gun" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_kGuc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_kalibretar" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_kkacsay" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_kkactar" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_pildurumu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_saat" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_serino" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_t1akt" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_t1ind" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_t1kap" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_t2akt" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_t2ind" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_t2kap" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_t3akt" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_t3ind" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_t3kap" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_takt" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_tarifedegtar" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_tarih" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_tind" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_tkap" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="syc_uretimtar" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Sayac" nillable="true" type="tns:Sayac" />
+</xs:schema>

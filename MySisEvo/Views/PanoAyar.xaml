@@ -1,0 +1,24 @@
+﻿<telerik:RadWindow
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+    xmlns:data="clr-namespace:MySisEvo.Classes"
+ 
+    xmlns:System_Linq_Expressions="clr-namespace:System.Linq.Expressions;assembly=System.Core" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit" xmlns:System_Threading="clr-namespace:System.Threading;assembly=System.Core" x:Class="MySisEvo.Views.PanoAyar"
+    mc:Ignorable="d" d:DesignHeight="175" d:DesignWidth="300" Header="Ayarlar"  Background="White" ResizeMode="NoResize"  FontFamily="Arial" UseLayoutRounding="{Binding}" Name="Radwindow1" Loaded="Radwindow1_Loaded" Closed="Radwindow1_Closed">
+
+  
+
+   
+    <Grid Background="Black">
+        <TextBlock Height="21" Margin="12,6,12,0" Name="lblbilgi" Text="Bilgilendir" VerticalAlignment="Top" Foreground="SpringGreen" FontSize="15" TextAlignment="Center" />
+        <Button Content="Setle" Height="Auto" HorizontalAlignment="Left" Margin="64,96,0,0" Name="btnsetle" VerticalAlignment="Top" Width="Auto" FontSize="12" Click="btnsetle_Click" />
+        <Button Content="İptal" Height="Auto" HorizontalAlignment="Right" Margin="0,96,71,0" Name="btncancel" VerticalAlignment="Top" Width="Auto" FontSize="12" Click="btncancel_Click" />
+        <TextBox Height="22" HorizontalAlignment="Left" Margin="69,27,0,0" Name="txtveri" VerticalAlignment="Top" Width="134" TextAlignment="Center" KeyUp="txtveri_KeyUp" KeyDown="txtveri_KeyDown" IsReadOnly="True" />
+        <Slider Height="10" HorizontalAlignment="Left" Margin="12,53,0,0" Name="slider1" VerticalAlignment="Top" Width="247" AllowDrop="False" ValueChanged="slider1_ValueChanged" Cursor="Hand" />
+        <RadioButton Content="RadioButton" Height="16" HorizontalAlignment="Left" Margin="53,69,0,0" Name="Rabtn1" VerticalAlignment="Top" Visibility="Collapsed" />
+        <RadioButton Content="RadioButton" Height="16" HorizontalAlignment="Left" Margin="154,69,0,0" Name="Rabtn2" VerticalAlignment="Top" Visibility="Collapsed" />
+    </Grid>
+</telerik:RadWindow>

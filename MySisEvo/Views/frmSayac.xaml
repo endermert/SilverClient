@@ -1,0 +1,418 @@
+﻿<controls:ChildWindow x:Class="MySisEvo.Views.frmSayac"
+           xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+                      xmlns:data="clr-namespace:MySisEvo.Classes" Title="Sayaç Okuma" Loaded="ChildWindow_Loaded">
+    <controls:ChildWindow.Resources>
+        <data:Entities x:Key="EntityObject" />
+    </controls:ChildWindow.Resources>
+    <Grid x:Name="LayoutRoot" Margin="2">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" Background="Black" VerticalAlignment="Stretch">
+
+            <StackPanel Orientation="Vertical" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0">
+                <Border BorderBrush="White" BorderThickness="1" CornerRadius="2" Margin="1" Width="610" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Transparent">
+                        <!--<Border BorderBrush="Navy" BorderThickness="0" CornerRadius="2" Margin="1" Height="60">-->
+                        <StackPanel Orientation="Vertical" Margin="1" Width="150" AllowDrop="False" Height="55">
+                            <TextBlock Text="SERiNO" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                            <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="140">
+                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                    <TextBlock Text="09025716" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="140" TextAlignment="Center" Name="syc_serino" />
+                                    <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                </StackPanel>
+                            </Border>
+                        </StackPanel>
+                        <!--</Border>
+                                                <Border BorderBrush="Navy" BorderThickness="0" CornerRadius="2" Margin="1" >-->
+                        <StackPanel Orientation="Vertical" Margin="1" Width="150" AllowDrop="False" Height="55">
+                            <TextBlock Text="TARiH" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                            <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="140">
+                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                    <TextBlock Text="12-03-07" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="140" TextAlignment="Center" Name="syc_tarih" />
+                                    <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                </StackPanel>
+                            </Border>
+                        </StackPanel>
+                        <!--</Border>
+                                                <Border BorderBrush="Navy" BorderThickness="0" CornerRadius="2" Margin="1" >-->
+                        <StackPanel Orientation="Vertical" Margin="1" Width="150" AllowDrop="False" Height="55">
+                            <TextBlock Text="SAAT" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                            <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="140">
+                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                    <TextBlock Text="16:37:09" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="140" TextAlignment="Center" Name="syc_saat" />
+                                    <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                </StackPanel>
+                            </Border>
+                        </StackPanel>
+                        <!--</Border>
+                                                <Border BorderBrush="Navy" BorderThickness="1" CornerRadius="2" Margin="1" >-->
+                        <StackPanel Orientation="Vertical" Margin="1" Width="150" AllowDrop="False" Height="55">
+                            <TextBlock Text="GUN" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                            <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="140">
+                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                    <TextBlock Text="PAZARTESi" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="140" TextAlignment="Center" Name="syc_gun" />
+                                    <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                </StackPanel>
+                            </Border>
+                        </StackPanel>
+                        <!--</Border>-->
+                    </StackPanel>
+                </Border>
+                <sdk:TabControl>
+                    <sdk:TabItem Header="SAYAC TÜKETiM DEĞERLERi" IsSelected="True" FontWeight="ExtraBold">
+                        <StackPanel Orientation="Vertical" Background="Black" Height="310" Width="615">
+
+                            <Border BorderBrush="White" BorderThickness="1" CornerRadius="2" Margin="5" Width="610">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Transparent">
+                                    <!--<Border BorderBrush="Navy" BorderThickness="0" CornerRadius="2" Margin="1" Height="60">-->
+                                    <StackPanel Orientation="Vertical" Margin="1" Width="150" AllowDrop="False" Height="55">
+                                        <TextBlock Text="T1 AKTiF" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                        <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="140">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="00000.000" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="140" TextAlignment="Center" Name="syc_t1akt" />
+                                                <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                    <!--</Border>
+                                                <Border BorderBrush="Navy" BorderThickness="0" CornerRadius="2" Margin="1" >-->
+                                    <StackPanel Orientation="Vertical" Margin="1" Width="150" AllowDrop="False" Height="55">
+                                        <TextBlock Text="T2 AKTiF" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                        <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="140">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="00000.000" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="140" TextAlignment="Center" Name="syc_t2akt" />
+                                                <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                    <!--</Border>
+                                                <Border BorderBrush="Navy" BorderThickness="0" CornerRadius="2" Margin="1" >-->
+                                    <StackPanel Orientation="Vertical" Margin="1" Width="150" AllowDrop="False" Height="55">
+                                        <TextBlock Text="T3 AKTiF" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                        <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="140">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="00000.000" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="140" TextAlignment="Center" Name="syc_t3akt" />
+                                                <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                    <!--</Border>
+                                                <Border BorderBrush="Navy" BorderThickness="1" CornerRadius="2" Margin="1" >-->
+                                    <StackPanel Orientation="Vertical" Margin="1" Width="150" AllowDrop="False" Height="55">
+                                        <TextBlock Text="AKTiF TOPLAM" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                        <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="140">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="00000.000" Margin="1" Foreground="Green" FontWeight="ExtraBold" FontFamily="Portable User Interface" FontSize="18" Width="140" TextAlignment="Center" FontStretch="Normal" Name="syc_takt" />
+                                                <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                    <!--</Border>-->
+                                </StackPanel>
+                            </Border>
+                            <Border BorderBrush="White" BorderThickness="1" CornerRadius="2" Margin="5" Width="610">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Transparent">
+                                    <!--<Border BorderBrush="Navy" BorderThickness="0" CornerRadius="2" Margin="1" Height="60">-->
+                                    <StackPanel Orientation="Vertical" Margin="1" Width="150" AllowDrop="False" Height="55">
+                                        <TextBlock Text="T1 iNDÜKTiF" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                        <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="140">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="00000.000" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="140" TextAlignment="Center" Name="syc_t1ind" />
+                                                <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                    <!--</Border>
+                                                <Border BorderBrush="Navy" BorderThickness="0" CornerRadius="2" Margin="1" >-->
+                                    <StackPanel Orientation="Vertical" Margin="1" Width="150" AllowDrop="False" Height="55">
+                                        <TextBlock Text="T2 iNDÜKTiF" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                        <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="140">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="00000.000" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="140" TextAlignment="Center" Name="syc_t2ind" />
+                                                <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                    <!--</Border>
+                                                <Border BorderBrush="Navy" BorderThickness="0" CornerRadius="2" Margin="1" >-->
+                                    <StackPanel Orientation="Vertical" Margin="1" Width="150" AllowDrop="False" Height="55">
+                                        <TextBlock Text="T3 iNDÜKTiF" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                        <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="140">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="00000.000" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="140" TextAlignment="Center" Name="syc_t3ind" />
+                                                <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                    <!--</Border>
+                                                <Border BorderBrush="Navy" BorderThickness="1" CornerRadius="2" Margin="1" >-->
+                                    <StackPanel Orientation="Vertical" Margin="1" Width="150" AllowDrop="False" Height="55">
+                                        <TextBlock Text="iNDÜKTiF TOPLAM" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                        <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="140">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="00000.000" Margin="1" Foreground="Green" FontWeight="ExtraBold" FontFamily="Portable User Interface" FontSize="18" Width="140" TextAlignment="Center" FontStretch="Normal" Name="syc_tind" />
+                                                <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                    <!--</Border>-->
+                                </StackPanel>
+                            </Border>
+                            <Border BorderBrush="White" BorderThickness="1" CornerRadius="2" Margin="5" Width="610">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Transparent">
+                                    <!--<Border BorderBrush="Navy" BorderThickness="0" CornerRadius="2" Margin="1" Height="60">-->
+                                    <StackPanel Orientation="Vertical" Margin="1" Width="150" AllowDrop="False" Height="55">
+                                        <TextBlock Text="T1 KAPASiTiF" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                        <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="140">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="00000.000" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="140" TextAlignment="Center" Name="syc_t1kap" />
+                                                <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                    <!--</Border>
+                                                <Border BorderBrush="Navy" BorderThickness="0" CornerRadius="2" Margin="1" >-->
+                                    <StackPanel Orientation="Vertical" Margin="1" Width="150" AllowDrop="False" Height="55">
+                                        <TextBlock Text="T2 KAPASiTiF" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                        <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="140">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="00000.000" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="140" TextAlignment="Center" Name="syc_t2kap" />
+                                                <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                    <!--</Border>
+                                                <Border BorderBrush="Navy" BorderThickness="0" CornerRadius="2" Margin="1" >-->
+                                    <StackPanel Orientation="Vertical" Margin="1" Width="150" AllowDrop="False" Height="55">
+                                        <TextBlock Text="T3 KAPASiTiF" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                        <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="140">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="00000.000" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="140" TextAlignment="Center" Name="syc_t3kap" />
+                                                <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                    <!--</Border>
+                                                <Border BorderBrush="Navy" BorderThickness="1" CornerRadius="2" Margin="1" >-->
+                                    <StackPanel Orientation="Vertical" Margin="1" Width="150" AllowDrop="False" Height="55">
+                                        <TextBlock Text="KAPASiTiF TOPLAM" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                        <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="140">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="00000.000" Margin="1" Foreground="Green" FontWeight="ExtraBold" FontFamily="Portable User Interface" FontSize="18" Width="140" TextAlignment="Center" FontStretch="Normal" Name="syc_tkap" />
+                                                <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                    <!--</Border>-->
+                                </StackPanel>
+                            </Border>
+                        </StackPanel>
+                    </sdk:TabItem>
+                    <sdk:TabItem Header="SAYAÇ AYRINTILARI" FontWeight="ExtraBold">
+
+                        <StackPanel Orientation="Vertical" Background="Black" Height="310" Width="615">
+                            <Border BorderBrush="Black" BorderThickness="1" CornerRadius="2" Margin="1" Height="60" Width="550" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Background="Transparent">
+                                    <!--<Border BorderBrush="Navy" BorderThickness="1" CornerRadius="2" Margin="1" Height="60">-->
+                                    <StackPanel Orientation="Vertical" Margin="1" Width="180" AllowDrop="False" Height="55">
+                                        <TextBlock Text="GöVDE AÇILMA TARiHi" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                        <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="170">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="00-00-00,00:00" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="170" TextAlignment="Center" Name="syc_govactar" />
+                                                <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                    <!--</Border>
+                                            <Border BorderBrush="Navy" BorderThickness="1" CornerRadius="2" Margin="1" Height="60">-->
+                                    <StackPanel Orientation="Vertical" Margin="1" Width="180" AllowDrop="False" Height="55">
+                                        <TextBlock Text="K. KAPAĞI AÇILMA TARiHİ" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                        <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="170">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="00-00-00,00:00" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="170" TextAlignment="Center" Name="syc_kkactar" />
+                                                <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                    <!--</Border>
+                                            <Border BorderBrush="Navy" BorderThickness="1" CornerRadius="2" Margin="1" >-->
+                                    <StackPanel Orientation="Vertical" Margin="1" Width="180" AllowDrop="False" Height="55">
+                                        <TextBlock Text="K. KAPAĞI AÇILMA ADEDi" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                        <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="170">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="00" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="170" TextAlignment="Center" Name="syc_kkacsay" />
+                                                <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                    <!--</Border>-->
+                                </StackPanel>
+                            </Border>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Background="Transparent">
+                                <Border BorderBrush="Black" BorderThickness="1" CornerRadius="2" Margin="1" Height="60">
+                                    <StackPanel Orientation="Vertical" Margin="1" Width="180" AllowDrop="False" Height="55">
+                                        <TextBlock Text="EN YÜKSEK ÖLÇÜ SÜRESİ" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                        <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="170">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="00" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="170" TextAlignment="Center" Name="syc_enyukolcsur" />
+                                                <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                </Border>
+                                <Border BorderBrush="Black" BorderThickness="1" CornerRadius="2" Margin="1" Height="60">
+                                    <StackPanel Orientation="Vertical" Margin="1" Width="180" AllowDrop="False" Height="55">
+                                        <TextBlock Text="DEMAND SIFIRLAMA SAYISI" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                        <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="170">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="00-00-00,00:00" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="170" TextAlignment="Center" Name="syc_dem0say" />
+                                                <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                </Border>
+                                <Border BorderBrush="Black" BorderThickness="1" CornerRadius="2" Margin="1" HorizontalAlignment="Center">
+                                    <StackPanel Orientation="Vertical" Margin="1" Width="180" AllowDrop="False" Height="55">
+                                        <TextBlock Text="DEMAND" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                        <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="170">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="000.328" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="170" TextAlignment="Center" Name="syc_demand" />
+                                                <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                </Border>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Background="Transparent">
+                                <Border BorderBrush="Black" BorderThickness="1" CornerRadius="2" Margin="1" Height="60">
+                                    <StackPanel Orientation="Vertical" Margin="1" Width="180" AllowDrop="False" Height="55">
+                                        <TextBlock Text="ÜRETiM TARiHİ" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                        <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="170">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="00-00-00,00:00" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="170" TextAlignment="Center" Name="syc_urtar" />
+                                                <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                </Border>
+                                <Border BorderBrush="Black" BorderThickness="1" CornerRadius="2" Margin="1" Height="60">
+                                    <StackPanel Orientation="Vertical" Margin="1" Width="180" AllowDrop="False" Height="55">
+                                        <TextBlock Text="KALiBRASYON TARiHi" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                        <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="170">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="00-00-00,00:00" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="170" TextAlignment="Center" Name="syc_kaliberetar" />
+                                                <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                </Border>
+                                <Border BorderBrush="Black" BorderThickness="1" CornerRadius="2" Margin="1" >
+                                    <StackPanel Orientation="Vertical" Margin="1" Width="180" AllowDrop="False" Height="55">
+                                        <TextBlock Text="TARiFE BiLGİ DEĞiŞiKLiK" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                        <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="170">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="09-11-20,12:53" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="170" TextAlignment="Center" Name="syc_tarifedeg" />
+                                                <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                </Border>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Background="Transparent">
+                                <Border BorderBrush="Black" BorderThickness="1" CornerRadius="2" Margin="1" Height="60">
+                                    <StackPanel Orientation="Vertical" Margin="1" Width="180" AllowDrop="False" Height="55">
+                                        <TextBlock Text="1. FAZ KESiLME ADEDi" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                        <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="170">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="00" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="170" TextAlignment="Center" Name="syc_fazkes1" />
+                                                <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                </Border>
+                                <Border BorderBrush="Black" BorderThickness="1" CornerRadius="2" Margin="1" Height="60">
+                                    <StackPanel Orientation="Vertical" Margin="1" Width="180" AllowDrop="False" Height="55">
+                                        <TextBlock Text="2. FAZ KESiLME ADEDi" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                        <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="170">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="00" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="170" TextAlignment="Center" Name="syc_fazkes2" />
+                                                <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                </Border>
+                                <Border BorderBrush="Black" BorderThickness="1" CornerRadius="2" Margin="1" >
+                                    <StackPanel Orientation="Vertical" Margin="1" Width="180" AllowDrop="False" Height="55">
+                                        <TextBlock Text="3. FAZ KESiLME ADEDi" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                        <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="170">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="00" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="170" TextAlignment="Center" Name="syc_fazkes3" />
+                                                <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                </Border>
+                            </StackPanel>
+                            <Border BorderBrush="White" BorderThickness="1" CornerRadius="2" Margin="1" Width="610">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Transparent">
+                                    <!--<Border BorderBrush="Navy" BorderThickness="0" CornerRadius="2" Margin="1" Height="60">-->
+                                    <StackPanel Orientation="Vertical" Margin="1" Width="150" AllowDrop="False" Height="55">
+                                        <TextBlock Text="ÜÇ FAZ KESİLME SAYISI" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                        <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="140">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="00" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="140" TextAlignment="Center" Name="syc_ucfazuyari" />
+                                                <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                    <!--</Border>
+                                                <Border BorderBrush="Navy" BorderThickness="0" CornerRadius="2" Margin="1" >-->
+                                    <StackPanel Orientation="Vertical" Margin="1" Width="150" AllowDrop="False" Height="55">
+                                        <TextBlock Text="AKIM UYARI SAYISI" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                        <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="140">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="00" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="140" TextAlignment="Center" Name="syc_auyari" />
+                                                <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                    <!--</Border>
+                                                <Border BorderBrush="Navy" BorderThickness="0" CornerRadius="2" Margin="1" >-->
+                                    <StackPanel Orientation="Vertical" Margin="1" Width="150" AllowDrop="False" Height="55">
+                                        <TextBlock Text="GERiLiM UYARI SAYISI" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                        <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="140">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="00" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="140" TextAlignment="Center" Name="syc_vuyari" />
+                                                <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                    <!--</Border>
+                                                <Border BorderBrush="Navy" BorderThickness="1" CornerRadius="2" Margin="1" >-->
+                                    <StackPanel Orientation="Vertical" Margin="1" Width="150" AllowDrop="False" Height="55">
+                                        <TextBlock Text="PiL DURUMU" Foreground="White" FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                        <Border  CornerRadius="2" BorderBrush="White" Margin="1" BorderThickness="1" Height="35" Width="140">
+                                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                                <TextBlock Text="DOLU" Margin="1" Foreground="Green" FontWeight="SemiBold" FontFamily="Portable User Interface" FontSize="18" Width="140" TextAlignment="Center" Name="syc_pil" />
+                                                <TextBlock Text="" Margin="1" Foreground="Navy" FontWeight="Bold"  FontFamily="Arial Black" FontSize="18" />
+                                            </StackPanel>
+                                        </Border>
+                                    </StackPanel>
+                                    <!--</Border>-->
+                                </StackPanel>
+                            </Border>
+                        </StackPanel>
+                    </sdk:TabItem>
+                </sdk:TabControl>
+
+
+
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</controls:ChildWindow>

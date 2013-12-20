@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://88.247.221.186:9080/CihazlarServis.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/MySisEvo.Web.Classes" />
+  <xs:import schemaLocation="http://88.247.221.186:9080/CihazlarServis.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="getCihazlar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="kulAd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getCihazlarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/MySisEvo.Web.Classes" minOccurs="0" name="getCihazlarResult" nillable="true" type="q1:ArrayOfCihazlar" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAraclar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="kulAd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAraclarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/MySisEvo.Web.Classes" minOccurs="0" name="getAraclarResult" nillable="true" type="q2:ArrayOfAraclar" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getKullanici">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="kulAd" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="kulSifre" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getKullaniciResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/MySisEvo.Web.Classes" minOccurs="0" name="getKullaniciResult" nillable="true" type="q3:Kullanici" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DegerAyikla">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="value" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DegerAyiklaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="DegerAyiklaResult" nillable="true" type="q4:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAniDegerler">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="value" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAniDegerlerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/MySisEvo.Web.Classes" minOccurs="0" name="getAniDegerlerResult" nillable="true" type="q5:Role" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getSayacDegerler">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="value" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getSayacDegerlerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/MySisEvo.Web.Classes" minOccurs="0" name="getSayacDegerlerResult" nillable="true" type="q6:Sayac" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

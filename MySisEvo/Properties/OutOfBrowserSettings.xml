@@ -1,0 +1,15 @@
+<OutOfBrowserSettings ShortName="Mysis Uzaktan İzleme Sistemleri" EnableGPUAcceleration="True" ShowInstallMenuItem="True">
+  <OutOfBrowserSettings.Blurb>Bu uygulama ile Mysis Uzaktan İzleme Sistemleri' ni masaüstünüzden; evden, işten ve diğer yerlerden yönetebilirsiniz.. MYSiS A.Ş.</OutOfBrowserSettings.Blurb>
+  <OutOfBrowserSettings.WindowSettings>
+    <WindowSettings Title="Mysis Uzaktan İzleme Sistemleri" Height="768" Width="1024" Top="0" Left="0" WindowStartupLocation="Manual" />
+  </OutOfBrowserSettings.WindowSettings>
+  <OutOfBrowserSettings.SecuritySettings>
+    <SecuritySettings ElevatedPermissions="Required" />
+  </OutOfBrowserSettings.SecuritySettings>
+  <OutOfBrowserSettings.Icons>
+    <Icon Size="16,16">Images/Logo/mysis_16.png</Icon>
+    <Icon Size="32,32">Images/Logo/mysis_32.png</Icon>
+    <Icon Size="48,48">Images/Logo/mysis_48.png</Icon>
+    <Icon Size="128,128">Images/Logo/mysis_128.png</Icon>
+  </OutOfBrowserSettings.Icons>
+</OutOfBrowserSettings>
